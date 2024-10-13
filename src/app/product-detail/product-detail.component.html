@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>{{ product?.title }}</h1>
+    <img [src]="product?.image" class="img-fluid" alt="{{ product?.title }}">
+    <p>{{ product?.description }}</p>
+    <p>Precio: ${{ product?.price }}</p>
+    <p>Categoría: {{ product?.category }}</p>
+  
+    <button class="btn btn-success mt-3" (click)="addToCart(product)">
+      Añadir al Carrito
+    </button>
+  </div>
+ 
+  
